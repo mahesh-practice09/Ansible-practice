@@ -1,0 +1,21 @@
+---
+- name: Ansible Facts
+  hosts: local
+  connection: local
+  tasks:
+    - name: to print ansible facts
+      ansible.builtin.debug:
+        # var: ansible_facts
+
+---
+- name: Ansible Facts
+  hosts: local
+  connection: local
+  tasks:
+    - name: to print ansible facts
+      ansible.builtin.debug:
+        var: {{ ansible_facts }}
+    - name: to check redhat or not 
+      ansible.builtin.debug:
+         msg: {{ This is Redhat System }}
+      when: ansible_facts.os_family =="Redhat"
