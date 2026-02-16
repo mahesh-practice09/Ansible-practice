@@ -3,10 +3,9 @@
   hosts: local
   connection: local
   vars:
-    IS_LIVE: true
+    Number_of_sessions: 7
   tasks:
     - name: when condtion example
       ansible.builtin.debug:
-        msg: Yes it is alive 
-      when: IS_LIVE == true
-      #when: IS_LIVE == false
+        msg: "Number of sessions greater than 7 "
+        when: Number_of_sessions >= 8
