@@ -1,0 +1,17 @@
+---
+- name: play level variables using vars_files
+  hosts: local
+  connection: local
+  vars:
+    Name: Mahesh
+  vars_files:
+   - course.yml
+  vars_prompt:
+    - name: Name 
+      prompt: Provide the Name?
+  tasks:
+   - name: Print name
+     vars:
+      
+     ansible.builtin.debug:
+        msg: my Name is {{ Name }}
