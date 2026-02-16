@@ -7,5 +7,5 @@
   tasks:
     - name: when condtion example
       ansible.builtin.debug:
-        msg: "Number of sessions greater than 7 "
-      when: Number_of_sessions >= 8
+        msg: "Number of sessions less than 7 "
+      when: Number_of_sessions >= 7
