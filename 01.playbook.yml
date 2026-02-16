@@ -4,5 +4,9 @@
   tasks:
     - name: Using ping Module
       ansible.builtin.ping:
+      register: ping_output
 
+    - name: Show ping output 
+      ansible.builtin.debug:
+      msg: ping_output
   
