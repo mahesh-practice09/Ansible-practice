@@ -1,0 +1,9 @@
+---
+- name: useradd
+  hosts: local
+  condition: local
+  tasks:
+   - name: Useradd Mahesh
+     ansible.builtin.user:
+       name: Mahesh
+      
