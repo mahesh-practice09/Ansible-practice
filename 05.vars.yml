@@ -1,0 +1,14 @@
+---
+- name: play level variables
+  hosts: local
+  connection: local
+  vars:
+    Days: 7
+    Tutor: Shiva
+    Course: Devops
+  tasks:
+   - name: Print play level variables
+     vars: 
+       Course: Ansible
+     ansible.builtin.debug:
+        msg: I will completed {{ Course }} taught by {{ Tutor }} in {{ Days }} Days
