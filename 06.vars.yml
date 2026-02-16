@@ -7,6 +7,6 @@
   tasks:
    - name: Print play level variables
      vars: 
-       Course: Ansible
+      #  Course: Ansible
      ansible.builtin.debug:
         msg: I will complete {{ Course }} taught by {{ Tutor }} in {{ Days }} Days
