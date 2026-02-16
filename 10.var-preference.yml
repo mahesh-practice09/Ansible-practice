@@ -15,3 +15,6 @@
       
      ansible.builtin.debug:
         msg: my Name is {{ Name }}
+
+
+# 1. extra vars from command 
