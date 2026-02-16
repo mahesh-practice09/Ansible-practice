@@ -1,0 +1,14 @@
+---
+- name: loops
+  hosts: local
+  connection: local
+  tasks:
+   - name: loops with names
+     ansible.builtin.package:
+       name: "{{ item }}"
+       state: present
+     loop:
+       - Keerthi
+       - Mahesh
+       - Parnika
+       - Jeevika
