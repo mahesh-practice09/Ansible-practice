@@ -8,5 +8,5 @@
 
     - name: Show ping output 
       ansible.builtin.debug:
-        var: ping
+        msg: ping.failed
   
