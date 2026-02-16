@@ -9,7 +9,6 @@
        name: "{{ item }}"
        state: present
      loop:
-       - Keerthi
-       - Mahesh
-       - Parnika
-       - Jeevika
+       - nginx
+       - mysql
+       - nodejs
