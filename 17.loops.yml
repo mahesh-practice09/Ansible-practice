@@ -2,6 +2,7 @@
 - name: loops
   hosts: local
   connection: local
+  become: true
   tasks:
    - name: loops with names
      ansible.builtin.package:
