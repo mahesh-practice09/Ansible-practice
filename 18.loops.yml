@@ -9,8 +9,7 @@
        name: "{{ item.name }}"
        state: "{{ item.state }}"
      loop: # list of map
-       - { name: mysql", state: absent } #map/dict
-       - { name: nginx", state: absent }
-       - { name: htop", state: present }
+       - { name: "mysql", state: absent } #map/dict
+       - { name: "nginx", state: absent }
+       - { name: "htop", state: present }
 
-       
