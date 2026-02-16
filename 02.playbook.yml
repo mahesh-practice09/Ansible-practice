@@ -1,0 +1,14 @@
+---
+- name: Task1
+  host: web
+  tasks:
+   - name: Print Hello World
+     ansible.builtin.debug:
+        msg: "Hello World"
+
+- name: Task2
+  host: web
+  tasks:
+   - name: Print Task1 and Task2
+     ansible.builtin.debug:
+        msg: "Task1 and Task2 from mulitple plays"
