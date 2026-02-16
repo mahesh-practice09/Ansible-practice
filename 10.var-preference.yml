@@ -4,8 +4,8 @@
   connection: local
   vars:
     Name: Mahesh
-  vars_files:
-   - course.yml
+  # vars_files:
+  #  - course.yml
   vars_prompt:
     - name: Name 
       prompt: Provide the Name?
