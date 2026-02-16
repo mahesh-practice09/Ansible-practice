@@ -1,0 +1,16 @@
+---
+- name: Prompt username and password from keyboard
+  hosts: local
+  connection: local
+  vars_prompt:
+    - name: username
+      prompt: Provide the username?
+      private: false
+
+    - name: password
+      prompt: Provide the password
+      private: true
+  tasks:
+   - name: Print the username
+     ansible.builtin.debug:
+       msg: username is {{ username }}
