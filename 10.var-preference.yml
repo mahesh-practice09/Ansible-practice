@@ -2,8 +2,8 @@
 - name: play level variables using vars_files
   hosts: local
   connection: local
-  vars:
-    Name: Mahesh
+  # vars:
+  #   Name: Mahesh
   # vars_files:
   #  - course.yml
   # vars_prompt:
@@ -21,5 +21,5 @@
 # 2. Tasks
 # 3. vars_files
 # 4. vars_prompt
-# 5. 
-# 6. Play Variables
+# 5. Play Variables
+# 6. 
