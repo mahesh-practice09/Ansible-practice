@@ -31,4 +31,4 @@
 
     - name: to get details
       ansible.builtin.debug:
-       msg : "{{ cat_output.stdout }}"
+       var: cat_output.stdout_lines
