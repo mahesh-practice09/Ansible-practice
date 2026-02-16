@@ -8,5 +8,7 @@
 
     - name: Show ping output 
       ansible.builtin.debug:
-        msg: "{{ ping.changed }}"
+        var: ping
+        #msg: "{{ ping.changed }}"
+
   
