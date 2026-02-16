@@ -1,5 +1,5 @@
 ---
-- name: play level variables
+- name: task level variables takes priority
   hosts: local
   connection: local
   vars:
