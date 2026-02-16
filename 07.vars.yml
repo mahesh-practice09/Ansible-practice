@@ -3,7 +3,7 @@
   hosts: local
   connection: local
   vars_prompt:
-    - name: username
+    - name: user
       prompt: Provide the username?
       private: false
 
