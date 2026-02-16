@@ -1,0 +1,7 @@
+---
+- name: Print variables from arguments
+  hosts: web
+  tasks:
+   - name: Print the variables from arguments
+     ansible.builtin.debug:
+        msg: This is Mahesh and I will complete {{ COURSE }} in {{ DAYS }} days
