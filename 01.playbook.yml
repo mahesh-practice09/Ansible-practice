@@ -8,5 +8,5 @@
 
     - name: Show ping output 
       ansible.builtin.debug:
-      msg: ping_output
+        msg: ping_output
   
