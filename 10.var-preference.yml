@@ -11,8 +11,8 @@
   #     prompt: Provide the Name?
   tasks:
    - name: Print name
-     vars:
-        Name: ARK
+    #  vars:
+    #     Name: ARK
      ansible.builtin.debug:
         msg: my Name is {{ Name }}
 
@@ -20,3 +20,5 @@
 # 1. extra vars from command 
 # 2. vars_files
 # 3. vars_prompt
+# 4. Task Variables
+# 5. 
