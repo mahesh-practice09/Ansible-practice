@@ -18,8 +18,8 @@
    - name: Print the Data Types used in Ansible
      ansible.builtin.debug:
         msg: |
-          Name: {{ Name }}
-          Duration: {{ Duration }}
-          Is_Live: {{ IS_Live }}
-          Course: {{ Course }}
-          Fruits: {{ Fruits }}
+          Name: "{{ Name }}"
+          Duration: "{{ Duration }}"
+          Is_Live: "{{ IS_Live }}"
+          Course: "{{ Course }}"
+          Fruits: "{{ Fruits }}"
