@@ -2,10 +2,8 @@
 - name: play level variables
   hosts: local
   connection: local
-  vars:
-    Days: 7
-    Tutor: Shiva
-    Course: Devops
+  vars_file:
+   - course.yml
   tasks:
    - name: Print play level variables
      vars: 
