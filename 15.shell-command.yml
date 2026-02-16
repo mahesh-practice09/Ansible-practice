@@ -4,7 +4,8 @@
   connection: local
   tasks:
     - name: command output   
-      ansible.builtin.command: cat /etc/passwd | grep root 
+      #ansible.builtin.command: cat /etc/passwd | grep root 
+      ansible.builtin.shell: cat /etc/passwd | grep root
       register: users_output
 
     - name: print command output
