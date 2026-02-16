@@ -6,16 +6,17 @@
     Name: Mahesh
   # vars_files:
   #  - course.yml
-  vars_prompt:
-    - name: Name 
-      prompt: Provide the Name?
+  # vars_prompt:
+  #   - name: Name 
+  #     prompt: Provide the Name?
   tasks:
    - name: Print name
      vars:
-      
+        Name: ARK
      ansible.builtin.debug:
         msg: my Name is {{ Name }}
 
 
 # 1. extra vars from command 
 # 2. vars_files
+# 3. vars_prompt
