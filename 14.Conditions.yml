@@ -19,3 +19,6 @@
       ansible.builtin.debug:
          msg: "This is Redhat System"
       when: ansible_facts.os_family =="RedHat"
+    - name: to check the ipv address
+      ansible.builtin.debug:
+        msg: ansible_facts.all_ipv4_addresses
