@@ -2,6 +2,7 @@
 - name: playbook to install nginx and start
   hosts: local
   connection: local
+  become: true
   tasks:
     - name: install nginx
       ansible.builtin.package:
