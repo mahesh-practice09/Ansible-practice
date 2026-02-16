@@ -1,6 +1,6 @@
 ---
 - name: Ping Module
-  hosts: local
+  hosts: localhost
   tasks:
     - name: Using ping Module
       ansible.builtin.ping:
