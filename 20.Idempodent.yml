@@ -1,7 +1,8 @@
 ---
 - name: useradd
   hosts: local
-  condition: local
+  connection: local
+  become: true
   tasks:
    - name: Useradd Mahesh
      ansible.builtin.user:
