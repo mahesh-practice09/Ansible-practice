@@ -1,0 +1,25 @@
+---
+- name: Print Data Types
+  hosts: local
+  connection: local
+  vars:
+    Name: "My Name is Mahesh will complete course in 140 Days" # String
+    Duration: 120 #integer
+    IS_Live: false #boolean
+    Course:    # map/dictationary
+       Course: Devops
+       Days: 100
+       Tutor: Siva
+    Fruits:  #list
+       - Apple
+       - Mango
+       - Banana
+  tasks:
+   - name: Print the Data Types used in Ansible
+     ansible.builtin.debug:
+        msg: 
+          Name: {{ Name }}
+          Duration: {{ Duration }}
+          Is_Live: {{ IS_Live }}
+          Course: {{ Course }}
+          Fruits: {{ Fruits }}
