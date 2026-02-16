@@ -17,7 +17,7 @@
         msg: "my Name is {{ Name }}"
 
 
-# 1. extra vars from command 
+# 1. extra vars or arguments from command 
 # 2. vars_files
 # 3. vars_prompt
 # 4. Task Variables
