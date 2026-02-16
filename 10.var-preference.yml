@@ -6,9 +6,9 @@
     Name: Mahesh
   # vars_files:
   #  - course.yml
-  vars_prompt:
-    - name: Name 
-      prompt: Provide the Name?
+  # vars_prompt:
+  #   - name: Name 
+  #     prompt: Provide the Name?
   tasks:
    - name: Print name
     #  vars:
@@ -19,7 +19,7 @@
 
 # 1. extra vars or arguments from command 
 # 2. Tasks
-# 2. vars_files
-# 3. vars_prompt
-# 4. 
-# 5. Play Variables
+# 3. vars_files
+# 4. vars_prompt
+# 5. 
+# 6. Play Variables
