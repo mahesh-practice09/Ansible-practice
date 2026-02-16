@@ -29,6 +29,6 @@
       ansible.builtin.shell: cat /etc/passwd
       register: cat_output
 
-    - name: to get detaiols
+    - name: to get details
       ansible.builtin.debug:
-      msg : "{{ cat_output.stdout }}"
+       msg : "{{ cat_output.stdout }}"
