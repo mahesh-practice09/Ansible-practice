@@ -24,3 +24,11 @@
     - name: to check the ipv address
       ansible.builtin.debug:
         msg: "{{ ansible_facts.all_ipv4_addresses }}"
+    
+    - name: to get output
+      ansible.builtin.shell: cat /etc/passwd
+      register: cat_output
+
+    - name: to get detaiols
+      ansible.builtin.debug:
+      msg : "{{ cat_output.stdout }}"
