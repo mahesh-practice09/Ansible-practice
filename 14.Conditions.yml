@@ -16,11 +16,6 @@
       ansible.builtin.debug:
         var: ansible_facts
 
-    - name: to check redhat or not 
-      ansible.builtin.debug:
-         msg: "This is Redhat System"
-      when: ansible_facts.os_family =="RedHat"
-
     - name: to check the ipv address
       ansible.builtin.debug:
         msg: "{{ ansible_facts.all_ipv4_addresses }}"
@@ -31,4 +26,9 @@
 
     - name: to get details
       ansible.builtin.debug:
-       var: cat_output.stdout_lines
+       var: cat_output.stdout_lines  
+    
+    - name: to check redhat or not 
+      ansible.builtin.debug:
+         msg: "This is Redhat System"
+      when: ansible_facts.os_family =="RedHat"
